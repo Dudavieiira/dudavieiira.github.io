@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoStore</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="#"><img src="../img/logo.png" alt="EcoStore Logo"></a>
+                </li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#produtos">PRODUTOS</a></li>
+                <li><a href="#carrinho" onclick="scrollToCarrinho()">CARRINHO</a></li>
+                <li><a href="#footer">CONTATO</a></li>
+                <li><a href="#entrar">ENTRAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main-banner">
+        <div>
+            <h1 class="banner-text">COMPRE PRODUTOS SUSTENTÁVEIS</h1>
+            <h2 class="banner-text2">E AJUDE UMA ONG.</h2>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="sobre-content">
+            <div class="text">
+                <h2>SOBRE</h2>
+                <p>A empresa EcoStore nasceu em 2023 com seus colaboradores tendo o intuito de conscientizar através da venda de produtos que promovam a sustentabilidade e a redução do lixo.</p>
+                <p>Nossa missão é utilizar a transparência com nossos clientes apresentando as ONG's que contribuímos financeiramente.</p>
+                <a href="#ongs">Saiba mais sobre as ONGS.</a>
+            </div>
+            <div class="image">
+                <img src="../img/tartaruga.png" alt="Imagem de uma tartaruga">
+            </div>
+        </div>
+    </section>
+
+    <section id="ongs">
+        <h2>ONGS PARCEIRAS</h2>
+        <div class="ongs-content">
+            <div class="ong">
+                <img src="../img/silvestre.png" alt="Logo ONG Espaço Silvestre">
+                <p><strong>Instituto Espaço Silvestre</strong> - Criado em 1999 um grupo de amigos apaixonados pela fauna silvestre 
+                           se reuniu para fundar o Espaço Silvestre, um coletivo que trabalha de forma voluntária. 
+                           Hoje o instituto é lar de cinco projetos ambientais, possui mais de 45 colaboradores e continua seu crescente impacto positivo na natureza.</p>
+                <a href="https://www.espacosilvestre.org.br/">https://www.espacosilvestre.org.br/</a>
+            </div>
+            <div class="ong">
+                <img src="../img/idesam.png" alt="Logo ONG Idesam">
+                <p><strong>Idesam</strong> - Tem o proposito de romover uma nova economia de base inclusiva e sustentável na Amazônia, 
+                           criando conexões aos atores de suas cadeias de valor e apontando caminhos inovadores para a conservação e a redução da pobreza.</p>
+                <a href="https://idesam.org/">https://idesam.org/</a>
+            </div>
+            <div class="ong">
+                <img src="../img/arca.png" alt="Logo ONG Arca Brasil">
+                <p><strong>Arca Brasil</strong> - Possui 25 anos de atuação, é uma entidade não governamental sem fins lucrativos, independente e apartidária, 
+                           inauguraram uma nova era de esperança e respeito aos direitos dos animais no país. Seu programa “Controle Ético das Populações de Cães e Gatos”, 
+                           reconhecido pela Organização Pan-Americana da Saúde (OPAS). 
+                    </p>
+                <a href="https://arcabrasil.org.br/">https://arcabrasil.org.br/</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>PRODUTOS</h2>
+        <div class="product-container">
+            <!-- Produto 1 -->
+            <div class="product">
+                <img src="../img/escova.png" alt="Escova de Bambu">
+                <div class="product-info">
+                    <p>Escova de Bambu</p>
+                    <p>R$9,99</p>
+                </div>
+                <button class="cart-button" onclick="addToCart('Escova de Bambu', 9.99, '../img/escova.png')">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product">
+                <img src="../img/bolsa.png" alt="EcoBag">
+                <div class="product-info">
+                    <p>EcoBag</p>
+                    <p>R$19,90</p>
+                </div>
+                <button class="cart-button" onclick="addToCart('EcoBag', 19.90, '../img/bolsa.png')">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product">
+                <img src="../img/canudinho.png" alt="Canudo de Metal">
+                <div class="product-info">
+                    <p>Canudo de Metal</p>
+                    <p>R$24,99</p>
+                </div>
+                <button class="cart-button" onclick="addToCart('Canudo de Metal', 24.99, '../img/canudinho.png')">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+             <!-- Produto 4 -->
+            <div class="product">
+                <img src="../img/garrafa.png" alt="Copo Compactável">
+                <div class="product-info">
+                    <p>Copo Compactável</p>
+                    <p>R$16,99</p>
+                </div>
+                <button class="cart-button" onclick="addToCart('Copo Compactável', 16.99, '../img/garrafa.png')">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+            <!-- Produto 5 -->
+            <div class="product">
+                <img src="../img/sabonete.png" alt="Shampoo e Condicionador em Barra">
+                <div class="product-info">
+                    <p>Shampoo e Condicionador em Barra</p>
+                    <p>R$89,99</p>
+                </div>
+                <button class="cart-button" onclick="addToCart('Shampoo e Condicionador em Barra', 89.90, '../img/sabonete.png')">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+            <!-- Produto 6 -->
+            <div class="product">
+                <img src="../img/copos.png" alt="Copo de Bambu Reutilizável">
+                <div class="product-info">
+                    <p>Copo de Bambu Reutilizável</p>
+                    <p>R$12,90</p>
+                </div>
+                <button class="cart-button" onclick="addToCart('Copo de Bambu Reutilizável', 12.90, '../img/copos.png')">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-buttons">
+            <button class="scroll-left" onclick="scrollProducts(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="scroll-right" onclick="scrollProducts(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="carrinho">
+        <h2 class="text-carrinho">CARRINHO</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Imagem</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os itens do carrinho serão adicionados dinamicamente aqui -->
+            </tbody>
+        </table>
+        <div id="total-amount">
+            Total: R$0,00
+        </div>
+        <div id="doacao">
+            <h3>Deseja doar 5% do total da sua compra para uma das instituições? <span id="donation-amount">(5% = R$0,00)</span></h3>
+            <label><input type="checkbox" name="doacao" value="Instituto Espaço Silvestre"> Instituto Espaço Silvestre</label><br>
+            <label><input type="checkbox" name="doacao" value="idesam"> Idesam</label><br>
+            <label><input type="checkbox" name="doacao" value="arca"> Arca Brasil</label>
+        </div>
+        <div id="checkout">
+            <button class="checkout-button" onclick="proceedToPayment()">Prosseguir para Pagamento</button>
+        </div>
+    </section>
+
+    <section id="entrar">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button id="login-toggle" onclick="showLogin()">Login</button>
+                <button id="register-toggle" onclick="showRegister()">Registrar</button>
+            </div>
+            <form id="login-form" class="form-content">
+                <h2>Já tenho cadastro</h2>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Senha:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Entrar</button>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </form>
+            <form id="register-form" class="form-content">
+                <h2 class=>Não tenho cadastro</h2>
+                <label for="register-name">Nome:</label>
+                <input type="text" id="register-name" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Senha:</label>
+                <input type="password" id="register-password" required>
+                <label for="register-password-confirm">Confirme a Senha:</label>
+                <input type="password" id="register-password-confirm" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div class="footer-content">
+            <h2>CONTATO</h2>
+            <div class="contact-info">
+                <div class="address">
+                    <p><strong>EcoStore</strong></p>
+                    <p><i class="fa fa-map-marker"></i> Rua Carlos Augusto Cornelsen, nº 123 - Bom Retiro</p>
+                    <p>Curitiba - PR, CEP 80520560</p>
+                </div>
+                <div class="contact-details">
+                    <p><i class="fa fa-phone"></i> (43) 3488-9456</p>
+                    <p><i class="fa fa-envelope"></i> ecostore123@outlook.com.br</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../style/script.js"></script>
+</body>
+</html>
