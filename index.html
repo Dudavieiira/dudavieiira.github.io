@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <section id="produtos">
+        <section id="produtos">
         <h2>PRODUTOS</h2>
         <div class="product-container">
             <!-- Produto 1 -->
@@ -81,10 +81,10 @@
                 <div class="product-info">
                     <p>Escova de Bambu</p>
                     <p>R$9,99</p>
+                    <button class="cart-button" onclick="addToCart('Escova de Bambu', 9.99, '../img/escova.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="cart-button" onclick="addToCart('Escova de Bambu', 9.99, '../img/escova.png')">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
             </div>
             <!-- Produto 2 -->
             <div class="product">
@@ -92,10 +92,10 @@
                 <div class="product-info">
                     <p>EcoBag</p>
                     <p>R$19,90</p>
+                    <button class="cart-button" onclick="addToCart('EcoBag', 19.90, '../img/bolsa.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="cart-button" onclick="addToCart('EcoBag', 19.90, '../img/bolsa.png')">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
             </div>
             <!-- Produto 3 -->
             <div class="product">
@@ -103,10 +103,10 @@
                 <div class="product-info">
                     <p>Canudo de Metal</p>
                     <p>R$24,99</p>
+                    <button class="cart-button" onclick="addToCart('Canudo de Metal', 24.99, '../img/canudinho.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="cart-button" onclick="addToCart('Canudo de Metal', 24.99, '../img/canudinho.png')">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
             </div>
              <!-- Produto 4 -->
             <div class="product">
@@ -114,10 +114,10 @@
                 <div class="product-info">
                     <p>Copo Compactável</p>
                     <p>R$16,99</p>
+                    <button class="cart-button" onclick="addToCart('Copo Compactável', 16.99, '../img/garrafa.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="cart-button" onclick="addToCart('Copo Compactável', 16.99, '../img/garrafa.png')">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
             </div>
             <!-- Produto 5 -->
             <div class="product">
@@ -125,10 +125,10 @@
                 <div class="product-info">
                     <p>Shampoo e Condicionador em Barra</p>
                     <p>R$89,99</p>
+                    <button class="cart-button" onclick="addToCart('Shampoo e Condicionador em Barra', 89.90, '../img/sabonete.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="cart-button" onclick="addToCart('Shampoo e Condicionador em Barra', 89.90, '../img/sabonete.png')">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
             </div>
             <!-- Produto 6 -->
             <div class="product">
@@ -136,10 +136,10 @@
                 <div class="product-info">
                     <p>Copo de Bambu Reutilizável</p>
                     <p>R$12,90</p>
+                    <button class="cart-button" onclick="addToCart('Copo de Bambu Reutilizável', 12.90, '../img/copos.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
                 </div>
-                <button class="cart-button" onclick="addToCart('Copo de Bambu Reutilizável', 12.90, '../img/copos.png')">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
             </div>
         </div>
         <div class="scroll-buttons">
@@ -147,7 +147,7 @@
             <button class="scroll-right" onclick="scrollProducts(1)"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
-
+    
     <section id="carrinho">
         <h2 class="text-carrinho">CARRINHO</h2>
         <table id="cart-table">
