@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Golpes Comuns | Segurança Digital</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="bg-pastel">
+    <nav class="navbar navbar-expand-lg navbar-light bg-pastel-secondary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Segurança Digital</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#">Golpes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dicas.html">Dicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <h1 class="text-center text-primary mb-4">Golpes Digitais Comuns</h1>
+      <p class="lead text-center">
+        Veja os principais golpes que afetam idosos e como eles acontecem.
+      </p>
+
+      <!-- Golpe 1 -->
+      <div class="row align-items-center my-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img
+            src="img/golpe-whatsapp.png"
+            class="img-fluid rounded"
+            alt="Exemplo de golpe no WhatsApp"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-success">Golpe do WhatsApp Clonado</h2>
+          <p class="fs-5">
+            O golpista se passa por um familiar ou amigo com uma nova conta no
+            WhatsApp e pede dinheiro via Pix.
+          </p>
+          <video controls class="w-100 rounded">
+            <source src="videos/video-golpe-whatsapp.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos.
+          </video>
+          <p class="mt-2">
+            Link para o vídeo:
+            <a
+              href="https://www.youtube.com/watch?v=gJ2RsCmd3y0"
+              target="_blank"
+              rel="noopener"
+            >
+              https://www.youtube.com/watch?v=gJ2RsCmd3y0
+            </a>
+          </p>
+          <p>
+            <strong>Dica:</strong> Sempre confirme com a pessoa por outro meio
+            antes de enviar dinheiro.
+          </p>
+        </div>
+      </div>
+
+      <!-- Golpe 2 -->
+      <div class="row align-items-center my-5 flex-md-row-reverse">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img
+            src="img/golpe-pix.png"
+            class="img-fluid rounded"
+            alt="Exemplo de golpe com Pix"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-success">Golpe do Falso Pix</h2>
+          <p class="fs-5">
+            Golpistas dizem que fizeram um Pix por engano e pedem que você
+            devolva o dinheiro, mas o comprovante é falso.
+          </p>
+          <video controls class="w-100 rounded">
+            <source src="videos/video-golpe-pix.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos.
+          </video>
+          <p class="mt-2">
+            Link para o vídeo:
+            <a
+              href="https://www.youtube.com/watch?v=tpnyERekUzA"
+              target="_blank"
+              rel="noopener"
+            >
+              https://www.youtube.com/watch?v=tpnyERekUzA
+            </a>
+          </p>
+          <p>
+            <strong>Dica:</strong> Nunca devolva dinheiro sem confirmar com o
+            banco ou com a pessoa envolvida.
+          </p>
+        </div>
+      </div>
+
+      <!-- Golpe 3 -->
+      <div class="row align-items-center my-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img
+            src="img/golpe-ligacao.png"
+            class="img-fluid rounded"
+            alt="Exemplo de golpe por ligação"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-success">Golpe da Central Falsa</h2>
+          <p class="fs-5">
+            Você recebe uma ligação dizendo que seu cartão foi clonado e pedem
+            seus dados para “ajudar” — é golpe!
+          </p>
+          <video controls class="w-100 rounded">
+            <source src="videos/video-golpe-ligacao.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos.
+          </video>
+          <p class="mt-2">
+            Link para o vídeo:
+            <a
+              href="https://www.youtube.com/watch?v=2OwABbFf_d8"
+              target="_blank"
+              rel="noopener"
+            >
+              https://www.youtube.com/watch?v=2OwABbFf_d8
+            </a>
+          </p>
+          <p>
+            <strong>Dica:</strong> Nunca forneça dados pessoais por telefone.
+            Desconfie sempre de ligações inesperadas.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-4 text-center">
+        <button
+          onclick="aumentarFonte()"
+          class="btn btn-outline-secondary me-2"
+        >
+          Aumentar Fonte
+        </button>
+        <button onclick="modoNoturno()" class="btn btn-outline-secondary me-2">
+          Modo Noturno
+        </button>
+      </div>
+    </main>
+
+    <footer class="bg-pastel-secondary text-center text-dark py-3 mt-4">
+      <small
+        >&copy; 2025 | Projeto Extensionista - Engenharia de Software |
+        Desenvolvido por Duda 💻</small
+      >
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

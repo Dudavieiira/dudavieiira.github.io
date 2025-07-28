@@ -1,0 +1,48 @@
+body.bg-pastel {
+  background-color: #fefaf4;
+  color: #333;
+}
+
+.bg-pastel-secondary {
+  background-color: #e3f2fd;
+}
+
+.text-primary {
+  color: #5e8ca8 !important;
+}
+
+.text-success {
+  color: #7cb78f !important;
+}
+
+a.nav-link {
+  font-size: 1.1rem;
+}
+
+/* Estilo padrão (modo claro) */
+#chat-container {
+  background-color: #fefaf4;
+}
+
+#chat-window div {
+  color: #333;
+}
+
+/* Modo noturno */
+.bg-dark #chat-container {
+  background-color: #1e1e1e !important; /* fundo escuro */
+}
+
+.bg-dark #chat-window div {
+  color: #fefaf4 !important; /* texto claro no modo escuro */
+}
+
+.bg-dark #chat-input {
+  background-color: #2b2b2b;
+  color: #fff;
+  border-color: #7cb78f;
+}
+
+.bg-dark #chat-input::placeholder {
+  color: #ccc;
+}

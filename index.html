@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Segurança Digital para Idosos</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JS -->
+    <script defer src="script.js"></script>
+  </head>
+  <body class="bg-pastel">
+    <nav class="navbar navbar-expand-lg navbar-light bg-pastel-secondary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Segurança Digital</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="golpes.html">Golpes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dicas.html">Dicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5 text-center">
+      <h1 class="text-primary mb-3">
+        Bem-vindo ao site Segurança Digital para Idosos
+      </h1>
+      <p class="lead">
+        Aqui você encontra dicas, vídeos e informações para se proteger de
+        golpes digitais no WhatsApp, Pix, ligações falsas e muito mais!
+      </p>
+
+      <div class="my-4">
+        <img
+          src="img/seguranca-digital.png"
+          class="img-fluid rounded w-70 w-md-50"
+          alt="Ilustração sobre segurança digital"
+        />
+      </div>
+
+      <section class="text-start mx-auto px-3" style="max-width: 700px">
+        <h2 class="h3 text-success mb-3">O que são golpes na internet?</h2>
+        <p>
+          Golpes digitais são tentativas de enganar pessoas para obter dinheiro,
+          dados pessoais ou acesso a contas e serviços online. Eles podem
+          acontecer de várias formas, como mensagens falsas no WhatsApp,
+          transferências de Pix fraudulentas, ligações com falsos representantes
+          ou e-mails que tentam roubar suas senhas.
+        </p>
+        <p>
+          É importante ficar atento às mensagens suspeitas, nunca compartilhar
+          códigos ou senhas, e confirmar sempre a identidade de quem está
+          falando com você, principalmente se pedir dinheiro ou informações
+          pessoais.
+        </p>
+        <p>
+          Neste site, você vai aprender a identificar esses golpes e proteger
+          sua segurança digital de forma simples e prática.
+        </p>
+      </section>
+
+      <div class="mt-4">
+        <button
+          onclick="aumentarFonte()"
+          class="btn btn-outline-secondary me-2"
+        >
+          Aumentar Fonte
+        </button>
+        <button onclick="modoNoturno()" class="btn btn-outline-secondary me-2">
+          Modo Noturno
+        </button>
+      </div>
+    </main>
+
+    <footer class="bg-pastel-secondary text-center text-dark py-3 mt-4">
+      <small
+        >&copy; 2025 | Projeto Extensionista - Engenharia de Software |
+        Desenvolvido por Duda 💻</small
+      >
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
