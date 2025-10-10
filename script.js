@@ -69,13 +69,13 @@ function responderMensagem(perguntaOriginal) {
       "Olá! 👋 Digite uma palavra-chave sobre sua dúvida, como: 'verificacao', 'whatsapp', 'golpe' ou 'denuncia'.";
   } else if (pergunta.includes("whatsapp")) {
     resposta =
-      "Para ativar a verificação em duas etapas no WhatsApp, veja este vídeo: https://youtu.be/JnVyH9O4Yqg";
+      "Para ativar a verificação em duas etapas no WhatsApp, veja este vídeo: https://www.youtube.com/shorts/uRV7FzG9hKg";
   } else if (pergunta.includes("google")) {
     resposta =
-      "Para ativar a verificação em duas etapas no Google, veja este vídeo: https://youtu.be/X6N2jS5D7V4";
+      "Para ativar a verificação em duas etapas no Google, veja este vídeo: https://www.youtube.com/watch?v=fJJCmG8mJLU";
   } else if (pergunta.includes("facebook")) {
     resposta =
-      "Para ativar a verificação em duas etapas no Facebook, veja este vídeo: https://youtu.be/9C5dB5HJ1A8";
+      "Para ativar a verificação em duas etapas no Facebook, veja este vídeo: https://www.youtube.com/watch?v=dQx2HW6nkJk";
   } else if (pergunta.includes("verificacao")) {
     resposta =
       "Você pode ativar a verificação em duas etapas nas configurações de segurança da sua conta, como no WhatsApp, Google ou Facebook.";
@@ -90,7 +90,7 @@ function responderMensagem(perguntaOriginal) {
       "Golpes digitais são tentativas de enganar as pessoas por mensagens, ligações ou e-mails. Sempre confirme antes de compartilhar dados ou fazer transferências.";
   } else if (pergunta.includes("senha")) {
     resposta =
-      "Evite senhas fracas como datas ou nomes. Use letras maiúsculas, minúsculas, números e símbolos. Veja mais: https://youtu.be/6ejZz1Mz4gc";
+      "Evite senhas fracas como datas ou nomes. Use letras maiúsculas, minúsculas, números e símbolos. Veja mais: https://www.youtube.com/watch?v=zefv-bNtZwg";
   } else if (pergunta.includes("vazamento")) {
     resposta =
       "Verifique se seu e-mail foi vazado em: https://haveibeenpwned.com";
